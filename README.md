@@ -264,7 +264,7 @@ URL's domain, so every crawl of a site collects under one folder:
 
 ```
 backend/data/
-└── multiqos.com/
+└── myratechnolabs.com/
     └── bea06cf36a8c4b0e8721ed0589713b88/
         ├── pages.jsonl        # one JSON object per crawled page (appended)
         ├── pages.csv          # the same rows, flattened, no markdown
@@ -281,18 +281,18 @@ One JSON object per line:
 
 ```json
 {
-  "url": "https://multiqos.com/",
+  "url": "https://myratechnolabs.com/",
   "status_code": 200,
   "depth": 0,
-  "title": "Agentic AI, Data Engineering & Software Development | MultiQoS",
-  "meta_description": "MultiQoS combines AI automation, modern data engineering…",
+  "title": "Agentic AI, Data Engineering & Software Development | Myra Technolabs",
+  "meta_description": "Myra Technolabs combines AI automation, modern data engineering…",
   "h1": "Upgrade Your Website Without Coding",
   "markdown": "# Agentic AI…",
   "word_count": 929,
   "content_hash": "49308700…",
   "crawled_at": "2026-09-19T12:38:10.114+00:00",
   "page_type": "home",
-  "canonical_url": "https://multiqos.com/",
+  "canonical_url": "https://myratechnolabs.com/",
   "lang": "en",
   "og_image": "https://…/og-home.jpg",
   "links_internal": 207,
@@ -325,19 +325,19 @@ the homepage, about page and contact page:
 
 ```json
 {
-  "_id": "multiqos.com",
-  "name": "MultiQoS",
-  "description": "MultiQoS combines AI automation, modern data engineering…",
+  "_id": "myratechnolabs.com",
+  "name": "Myra Technolabs",
+  "description": "Myra Technolabs combines AI automation, modern data engineering…",
   "logo": "https://…/og-home.jpg",
-  "favicon": "https://multiqos.com/favicon.ico",
+  "favicon": "https://myratechnolabs.com/favicon.ico",
   "lang": "en",
-  "emails": ["biz@multiqos.com"],
-  "phones": ["+12242102056", "+918866687330"],
-  "socials": [{"network": "linkedin", "url": "https://www.linkedin.com/company/multiqos/"}],
-  "services": [{"name": "AI Agent Development", "url": "https://multiqos.com/ai-agent-development-services"}],
+  "emails": ["info@myratechnolabs.com"],
+  "phones": ["+911234567890"],
+  "socials": [{"network": "linkedin", "url": "https://www.linkedin.com/company/myratechnolabs/"}],
+  "services": [{"name": "AI Agent Development", "url": "https://myratechnolabs.com/ai-agent-development-services"}],
   "services_count": 88,
   "team": [], "team_count": 0,
-  "key_pages": {"about": "https://multiqos.com/about-us/", "contact": "https://multiqos.com/contact-us/"},
+  "key_pages": {"about": "https://myratechnolabs.com/about-us/", "contact": "https://myratechnolabs.com/contact-us/"},
   "page_count": 20, "total_words": 23867,
   "pages_by_type": {"home": 1, "about": 1, "contact": 1, "services": 17}
 }
@@ -464,7 +464,7 @@ pages instead of losing them.
 
 **There is no depth limit.** Every internal link is followed until the site runs
 out of them; `depth` is recorded on each page as information only. A crawl of
-myratechnolabs.com reaches depth 6, and one of multiqos.com reaches depth 38.
+myratechnolabs.com reaches depth 6, and one of myratechnolabs.com reaches depth 38.
 
 `max_pages` defaults to `0`, meaning the whole site. `CRAWL_PAGE_CEILING`
 (10,000) still applies as a backstop so a crawl trap cannot run forever. The web
